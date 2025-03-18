@@ -1,6 +1,6 @@
 package Ss1;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Chuan_hoa_xau_ho_ten {
     public static void main(String[] args) {
@@ -21,5 +21,37 @@ public class Chuan_hoa_xau_ho_ten {
         //Tran Trung Hieu
         //Vo Le Hoa Binh
         Scanner sc = new Scanner(System.in);
+        int t=Integer.parseInt(sc.nextLine());
+        while(t-->0){
+            String s=sc.nextLine().trim().toLowerCase();
+            //Ktra do dai
+            if(s.length()>80){
+                //>max(80)=> Bo qua in dong trong
+                System.out.println();
+                //Chuyen sang test ttheo
+                continue;
+            }
+            String[] a=s.split("\\s+");
+            //For each : item la 1 chuoi dai dien cho 1 tu trg ten 
+            //CharAt() : la phtuc cua lop String, tra ve ky tu tai vtri chi so duoc chi dinh
+            //=> lay ky tu () cua chuoi item
+            //String.valueOf() : la 1 phtuc tinh cua lop String chuyen doi 1 gia tri thanh 1 chuoi
+            //=> eg: 'n' => "n" : tai sao phai chuyen u tai vi de dung pthuc toUpperCase() (chi adung cho chuoi, ko adung ttiep cho kieu char)
+            //Luồng xử lý:
+            // item = "nguyen".
+            // item.charAt(0): Lấy 'n' (kiểu char).
+            // String.valueOf('n'): Chuyển 'n' thành "n" (kiểu String).
+            // "n".toUpperCase(): Chuyển "n" thành "N".
+            // item.substring(1): Lấy chuỗi con của item từ vị trí 1 đến hết, tức là "guyen".
+            // "guyen".toLowerCase(): Chuyển "guyen" thành "guyen".
+            // "N" + "guyen": "Nguyen".
+            //=> in ra chuoi "Nguyen"
+            for (String item : a) {
+                if(!item.isEmpty()){
+                    System.out.print(String.valueOf(item.charAt(0)).toUpperCase() + item.substring(1) + " ");
+                }
+            }
+            System.out.println();
+        }
     }
 }

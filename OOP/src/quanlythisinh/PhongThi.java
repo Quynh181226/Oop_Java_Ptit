@@ -108,9 +108,6 @@ public class PhongThi {
         });
     }
 
-
-
-
     public  void inDanhSach(){
         System.out.println("=DANH SACH SINH VIEN=");
         System.out.println("So BD  Ho va ten Diem Toan  Diem Ly    Diem Hoa");
@@ -118,14 +115,6 @@ public class PhongThi {
             System.out.println(sv.toString());
         System.out.println("=====================================");
     }
-
-
-
-
-
-
-
-
 
     public String getMapt() {
         return mapt;
@@ -158,8 +147,5 @@ public class PhongThi {
     public void setList(ArrayList<ThiSinh> list) {
         this.list = list;
     }
-
-
-
 
 }

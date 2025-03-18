@@ -1,18 +1,3 @@
-//package quanlythisinh;
-//
-//public class Main {
-//    public static void main(String[] args) {
-//        PhongThi phongThi = new PhongThi("PT01", "Phòng 101", 30);
-//
-//        phongThi.themThiSinh();
-//        phongThi.nhapDiem();
-//        phongThi.inDanhSach();
-//
-//        phongThi.sapXepByTen();
-//        System.out.println("\nDanh sách sau khi sắp xếp theo tên:");
-//        phongThi.inDanhSach();
-//    }
-//}
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -22,10 +7,6 @@ package quanlythisinh;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Hoang Anh
- */
 public class QuanLyThiSinh {
 
     /**

@@ -27,7 +27,7 @@ public class Ex5 {
 //eg: n=10!, p=2
 //-> ptich thua so ngto cua 10! -> ptich thua so 2 trg tich co bnhieu so
     //Ham cua cach 2
-    public static int gegree(int n, int p){
+    public static int degree(int n, int p){
         int sum=0;
         //duyet cac boi cua p<=n
         //              //moi uoc chi duoc tang them p don vi nen t se ko toi uu = cach tiep theo -> cach 3
@@ -74,7 +74,7 @@ public class Ex5 {
         System.out.println(count);
         // //// C2
         //thi luc nay so giai thua lon den may ma muon tim cac boi p cua no van deu đc
-        System.out.println(gegree(n,p));
+        System.out.println(degree(n,p));
         // //// C3
         System.out.println(legendre(n,p));
     }

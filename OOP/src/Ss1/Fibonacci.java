@@ -28,5 +28,20 @@ package Ss1;
 // Giới hạn thời gian: 2s
 // Giới hạn bộ nhớ: 65536 Kb
 
+import java.util.Scanner;
+
 public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long [] f=new long[93];
+        f[1]=f[2]=1L;
+        for(int i=3;i<=92;i++){
+            f[i]=f[i-1]+f[i-2];
+        }
+        int t=sc.nextInt();
+        while(t-->0){
+            int n = sc.nextInt();
+            System.out.println(f[n]);
+        }
+    }
 }
