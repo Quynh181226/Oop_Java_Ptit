@@ -36,8 +36,10 @@ public class Ex7 {
         long m=sc.nextLong();
         long a=sc.nextLong();
         //tinh so vien da theo chieu dai va chieu rong
-        long rows=(n/a);
-        long cols=m/a;
+        //trong Java, không có hàm ceil cho kiểu long, nên bạn cần tính toán bằng tay:
+        //int rows=ceil(n/a);
+        long rows=(n+a-1)/a;
+        long cols=(m+a-1)/a;
         long total=rows*cols;
         System.out.print(total);
         sc.close();

@@ -7,6 +7,9 @@ public class Tong_so_nguyen_lon {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
+            //Nhập 2 số nguyên lớn
+            //BigInteger là kiểu dữ liệu của Java để lưu trữ số nguyên lớn
+            //To
             BigInteger a = sc.nextBigInteger();
             BigInteger b = sc.nextBigInteger();
             System.out.println(a.add(b).toString());

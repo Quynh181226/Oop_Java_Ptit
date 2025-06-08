@@ -72,7 +72,7 @@ public class Ex5 {
         }
 // 10. N co chu so tan cung la boi so cua 3
         // Bội số của 3 là các số chia hết cho 3, tức là:
-        //0, 3, 6, 9, 12, 15, ...
+        // 0, 3, 6, 9, 12, 15, ...
         if(unit%3==0){
             System.out.println("YES");
         }else{

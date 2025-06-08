@@ -9,5 +9,21 @@ package Ss1;
 //In-Out: 2                55
 //        10               210
 //        20
+
+import java.util.Scanner;
+
 public class Tong_n_so_nguyen_duong_dau_tien {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 1; i <= t; i++) {
+            int n = sc.nextInt();
+            int s = 0;
+            for (int j = 1; j <= n; j++) {
+                s += j;
+            }
+            System.out.println(s);
+        }
+    }
+
 }

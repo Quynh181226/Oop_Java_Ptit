@@ -25,4 +25,6 @@ package Ss1;
 // INVALID
 
 public class Cat_doi {
+    public static void main(String[] args) {
+    }
 }

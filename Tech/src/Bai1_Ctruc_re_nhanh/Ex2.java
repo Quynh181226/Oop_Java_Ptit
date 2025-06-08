@@ -20,6 +20,5 @@ public class Ex2 {
         }else{
             System.out.println("NO");
         }
-
     }
 }
