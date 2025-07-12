@@ -27,6 +27,7 @@ import java.util.Scanner;
 class Staff {
     private String mnv, name, sex, dob, address, tax, date;
     public Staff() {
+
         this("00001", "", "", "", "", "", "");
     }
     public Staff(String mnv, String name, String sex, String dob, String address, String tax, String date) {

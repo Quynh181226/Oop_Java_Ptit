@@ -36,47 +36,50 @@ package Ss1;
 //Giới hạn bộ nhớ: 200000Kb
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 class Student {
-    private String msv = "B20DCCN001";
+    private String msv;
     private String name;
-    private String lop;
-    private String dob;
-    private float gpa;
-    public Student() {
-        this("", "", "", 0f);
-    }
-    public Student(String name, String lop, String dob, float gpa) {
-        this.name = name;
-        this.lop = lop;
-        this.dob = dob;
-        this.gpa = gpa;
-    }
-    public String formatDob() {
-        try {
-            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-            Date date = formatter.parse(dob);
-            return formatter.format(date);
-        } catch (ParseException e) {
-            System.out.println(e);
-        }
-        return "";
+    private String gender;
+    private String className;
+    private String email;
+    private String phone;
+    public Student(String msv, String name, String gender, String className, String email, String phone) {
+        this.msv=msv;
+        this.name=name;
+        this.gender=gender;
+        this.className=className;
+        this.email=email;
+        this.phone=phone;
     }
     @Override
     public String toString() {
-        return msv + " " + name + " " + lop + " " + formatDob() + " " + String.format("%.2f", gpa);
+        return msv+", "+name+", "+gender+", "+className+", "+email+", "+phone;
     }
 }
 public class Khai_bao_lop_sinh_vien {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String name = sc.nextLine();
-        String lop = sc.nextLine();
-        String dob = sc.nextLine();
-        float gpa = sc.nextFloat();
-        Student stu = new Student(name, lop, dob, gpa);
-        System.out.println(stu);
+        int n=Integer.parseInt(sc.nextLine());
+        Student[] stu=new  Student[n];
+//        List<Student> stu=new ArrayList<Student>();
+        for(int i=0;i<n;i++){
+            String msv=sc.nextLine();
+            String name=sc.nextLine();
+            String gender=sc.nextLine();
+            String className=sc.nextLine();
+            String email=sc.nextLine();
+            String phone=sc.nextLine();
+//            stu.add(new Student(msv, name, gender, className, email, phone));
+            stu[i]=new Student(msv, name, gender, className, email, phone);
+        }
+        sc.close();
+        for(Student s: stu){
+            System.out.println(s);
+        }
     }
 }

@@ -2,7 +2,10 @@ package Bai1_Ctruc_re_nhanh;
 
 public class Ex27 {
     //Bài 22. Đồng xu
-    //Bạn có số lượng xu không giới hạn với các giá trị 1,2,3,……n (từ 1 tới n). Bạn muốn chọn một số bộ tiền có tổng giá trị S. Nó được phép có nhiều đồng tiền có cùng giá trị trong tập hợp. Số lượng đồng xu tối thiểu cần thiết để có được tổng S là bao nhiêu?
+    //Bạn có số lượng xu không giới hạn với các giá trị 1,2,3,……n (từ 1 tới n).
+    //Bạn muốn chọn một số bộ tiền có tổng giá trị S.
+    //Nó được phép có nhiều đồng tiền có cùng giá trị trong tập hợp.
+    //Số lượng đồng xu tối thiểu cần thiết để có được tổng S là bao nhiêu?
     //Gợi ý : S = 31, 32, 33, 34, n = 5 => Cần 7 đồng
     //S = 35, n => Cần 7 đồng
     //Input Format

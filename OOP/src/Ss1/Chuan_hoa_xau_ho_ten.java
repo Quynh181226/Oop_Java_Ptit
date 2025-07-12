@@ -27,7 +27,6 @@ public class Chuan_hoa_xau_ho_ten {
             //Ktra do dai
             if(s.length()>80){
                 //>max(80)=> Bo qua in dong trong
-                System.out.println();
                 //Chuyen sang test ttheo
                 continue;
             }
@@ -48,7 +47,11 @@ public class Chuan_hoa_xau_ho_ten {
             //=> in ra chuoi "Nguyen"
             for (String item : a) {
                 if(!item.isEmpty()){
-                    System.out.print(String.valueOf(item.charAt(0)).toUpperCase() + item.substring(1) + " ");
+//                    System.out.print(String.valueOf(item.charAt(0)).toUpperCase() + item.substring(1) + " ");
+                    char s1=Character.toUpperCase(item.charAt(0));
+                    String s2=item.substring(1);
+                    String s3=s1+s2;
+                    System.out.print(s3+" ");
                 }
             }
             System.out.println();
